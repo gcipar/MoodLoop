@@ -1,131 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mood Loop - Track Your Emotions</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Arial', sans-serif;
-        }
-        body {
-            line-height: 1.6;
-            color: #333;
-            background-color: #f5f5f5;
-        }
-        header {
-            background: linear-gradient(135deg, #6b48ff, #00ddeb);
-            color: white;
-            text-align: center;
-            padding: 50px 20px;
-        }
-        header h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-        }
-        header p {
-            font-size: 1.2em;
-            opacity: 0.9;
-        }
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-        .features {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: center;
-            margin: 40px 0;
-        }
-        .feature-card {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-            width: 300px;
-            text-align: center;
-        }
-        .feature-card h3 {
-            color: #6b48ff;
-            margin-bottom: 10px;
-        }
-        .cta {
-            text-align: center;
-            margin: 40px 0;
-        }
-        .cta a {
-            display: inline-block;
-            padding: 15px 30px;
-            background-color: #6b48ff;
-            color: white;
-            text-decoration: none;
-            border-radius: 25px;
-            font-size: 1.1em;
-            transition: background-color 0.3s;
-        }
-        .cta a:hover {
-            background-color: #5438cc;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            margin-top: 40px;
-        }
-        footer a {
-            color: #00ddeb;
-            text-decoration: none;
-        }
-        footer a:hover {
-            text-decoration: underline;
-        }
-        @media (max-width: 600px) {
-            header h1 {
-                font-size: 2em;
-            }
-            .feature-card {
-                width: 100%;
-            }
-        }
-    </style>
+    <title>Mood Loop - Praćenje Raspoloženja</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <h1>Mood Loop</h1>
-        <p>Tap into your emotions, find your balance.</p>
+        <p>Jednostavna aplikacija za praćenje raspoloženja.</p>
+        <a href="#download" class="btn">Preuzmi sada</a>
     </header>
 
-    <div class="container">
-        <section class="features">
-            <div class="feature-card">
-                <h3>Simple Mood Tracking</h3>
-                <p>Choose an emoji or color with one tap to log your mood – no sign-up needed.</p>
-            </div>
-            <div class="feature-card">
-                <h3>Weekly Insights</h3>
-                <p>See your mood trends with a stylish widget right on your home screen.</p>
-            </div>
-            <div class="feature-card">
-                <h3>Daily Tips</h3>
-                <p>Get random, uplifting advice based on how you feel each day.</p>
-            </div>
-        </section>
+    <section id="features">
+        <h2>Funkcionalnosti</h2>
+        <ul>
+            <li><strong>Kružni izbor emoji-ja:</strong> Izaberi svoje raspoloženje!</li>
+            <li><strong>Lokalno pohranjivanje podataka:</strong> Nema potrebe za registracijom.</li>
+            <li><strong>Widget na početnom zaslonu:</strong> Prikazuje tjedni grafikon raspoloženja.</li>
+            <li><strong>Dnevni podsjetnik:</strong> Podsjetnik za unos raspoloženja.</li>
+            <li><strong>Kratki savjeti:</strong> Savjeti na temelju unosa.</li>
+        </ul>
+    </section>
 
-        <section class="cta">
-            <p>Ready to start your mood journey?</p>
-            <a href="https://apps.apple.com/app/mood-loop" target="_blank">Download Now</a>
-        </section>
-    </div>
+    <section id="benefits">
+        <h2>Zašto bi Mood Loop uspio?</h2>
+        <ul>
+            <li><strong>Jednostavnost:</strong> Otvori i koristi bez komplikacija.</li>
+            <li><strong>Trendovi:</strong> Pruža podršku mentalnom zdravlju i minimalizmu.</li>
+            <li><strong>App Store potencijal:</strong> Praćenje raspoloženja je univerzalno privlačno.</li>
+        </ul>
+    </section>
+
+    <section id="pricing">
+        <h2>Monetizacija</h2>
+        <p><strong>Besplatna verzija:</strong> Osnovne funkcije.</p>
+        <p><strong>Premium verzija:</strong> 1,99 € za dodatne boje, savjete i prilagođene widgete.</p>
+    </section>
+
+    <section id="download">
+        <h2>Preuzmite Mood Loop</h2>
+        <p>Pripremite se za praćenje svog raspoloženja! Kliknite ispod za preuzimanje.</p>
+        <a href="#" class="btn">Preuzmi sada</a>
+    </section>
 
     <footer>
-        <p>&copy; 2025 Mood Loop. All rights reserved.</p>
-        <p><a href="mailto:cipargoran@gmail.com">Support</a> | <a href="https://moodloop.com/marketing">Marketing</a></p>
+        <p>&copy; 2025 Mood Loop. Sva prava pridržana.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
