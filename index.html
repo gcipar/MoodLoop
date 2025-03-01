@@ -3,70 +3,157 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mood Loop - Mood Tracking App</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Mood Loop - Track Your Emotional Journey</title>
+    <style>
+        :root {
+            --primary-color: #007AFF;
+            --text-color: #333;
+            --background: #f5f5f7;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: var(--background);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #007AFF, #5856D6);
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 24px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .features {
+            padding: 80px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+
+        .feature {
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .feature-icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .cta {
+            background: #000;
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .app-store-button {
+            background: var(--primary-color);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 30px;
+            transition: transform 0.2s;
+        }
+
+        .app-store-button:hover {
+            transform: scale(1.05);
+        }
+
+        .premium {
+            background: linear-gradient(135deg, #FFD700, #FFA500);
+            padding: 80px 20px;
+            text-align: center;
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 36px;
+            }
+            .hero p {
+                font-size: 18px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Mood Loop</h1>
-            <p>A simple app for tracking your mood.</p>
-            <a href="#download" class="btn">Download Now</a>
-        </div>
-    </header>
+    <div class="hero">
+        <h1>Mood Loop</h1>
+        <p>Track, understand, and improve your emotional well-being</p>
+    </div>
 
-    <section id="mood-selector">
-        <div class="container">
-            <h2>Select Your Mood</h2>
-            <div class="mood-wheel">
-                <div class="mood-option happy">😊</div>
-                <div class="mood-option sad">😢</div>
-                <div class="mood-option tired">😴</div>
-                <div class="mood-option angry">😠</div>
-                <div class="mood-option peaceful">🕊️</div>
-                <div class="mood-option stressed">😩</div>
-                <div class="mood-option confused">😕</div>
-                <div class="mood-option loved">❤️</div>
-                <div class="mood-option excited">😄</div>
-                <div class="mood-option relaxed">😌</div>
+    <div class="features">
+        <div class="feature">
+            <div class="feature-icon">😊</div>
+            <h2>Simple Mood Tracking</h2>
+            <p>Record your moods with just a tap using our intuitive emoji-based interface</p>
+        </div>
+        <div class="feature">
+            <div class="feature-icon">📊</div>
+            <h2>Visual Insights</h2>
+            <p>See your emotional patterns with beautiful, easy-to-understand graphs</p>
+        </div>
+        <div class="feature">
+            <div class="feature-icon">🎯</div>
+            <h2>Smart Advice</h2>
+            <p>Get personalized recommendations based on your mood patterns</p>
+        </div>
+    </div>
+
+    <div class="premium">
+        <h2>Premium Features</h2>
+        <p>Unlock advanced analytics, unlimited entries, and personalized insights</p>
+        <div class="features">
+            <div class="feature">
+                <div class="feature-icon">📱</div>
+                <h3>Health Integration</h3>
+                <p>Connect with Apple Health to see how physical activity affects your mood</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">📊</div>
+                <h3>Advanced Analytics</h3>
+                <p>Deep dive into your mood patterns with detailed statistics</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">📝</div>
+                <h3>Mood Categories</h3>
+                <p>Tag and analyze what's affecting your mood</p>
             </div>
         </div>
-    </section>
+    </div>
 
-    <section id="benefits">
-        <div class="container">
-            <h2>Why Mood Loop Will Succeed</h2>
-            <ul>
-                <li><strong>Simplicity:</strong> Open and use without complications.</li>
-                <li><strong>Trends:</strong> Supports mental health and minimalism.</li>
-                <li><strong>App Store Potential:</strong> Mood tracking is universally appealing.</li>
-            </ul>
-        </div>
-    </section>
+    <div class="cta">
+        <h2>Start Your Emotional Journey Today</h2>
+        <p>Download Mood Loop and take control of your emotional well-being</p>
+        <a href="#" class="app-store-button">Download on the App Store</a>
+    </div>
 
-    <section id="pricing">
-        <div class="container">
-            <h2>Monetization</h2>
-            <p><strong>Free Version:</strong> Basic features.</p>
-            <p><strong>Premium Version:</strong> €1.99 for additional colors, tips, and custom widgets.</p>
-        </div>
-    </section>
-
-    <section id="download">
-        <div class="container">
-            <h2>Download Mood Loop</h2>
-            <p>Get ready to track your mood! Click below to download.</p>
-            <a href="#" class="btn">Download Now</a>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Mood Loop. All rights reserved.</p>
-        </div>
+    <footer style="text-align: center; padding: 40px 20px; background: #333; color: white;">
+        <p>© 2025 Mood Loop. All rights reserved.</p>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
